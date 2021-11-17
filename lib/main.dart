@@ -16,9 +16,7 @@ class MyApp extends StatelessWidget {
             children: <Widget>[
               CircleAvatar(
                 radius: 50.0,
-                backgroundImage: NetworkImage(
-                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPmZUEXxUASGKMSX1P8FQDpPYV5dKZ_RP-Cw&usqp=CAU',
-                ),
+                backgroundImage: AssetImage('image/foto.jpg'),
               ),
               Text(
                 'Elexandro Torres',
@@ -49,12 +47,13 @@ class MyApp extends StatelessWidget {
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                 color: Colors.white,
                 child: ListTile(
+                  horizontalTitleGap: 1,
                   leading: Icon(
-                    Icons.add_shopping_cart,
+                    Icons.phone,
                     color: Colors.black,
                   ),
                   title: Text(
-                    '+55 84 988322989',
+                    '+55 84 98832-2989',
                     style: TextStyle(
                       fontSize: 20.0,
                     ),
@@ -65,6 +64,7 @@ class MyApp extends StatelessWidget {
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                 color: Colors.white,
                 child: ListTile(
+                  horizontalTitleGap: 1,
                   leading: Icon(
                     Icons.email,
                     color: Colors.black,
@@ -72,7 +72,7 @@ class MyApp extends StatelessWidget {
                   title: Text(
                     'elexandro.torres@gmail.com',
                     style: TextStyle(
-                      fontSize: 20.0,
+                      fontSize: 15.0,
                     ),
                   ),
                 ),
@@ -84,27 +84,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-/*
- Container(
-                padding: EdgeInsets.all(10.0),
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                color: Colors.white,
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.add_shopping_cart,
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      '+55 84 988322989',
-                      style: TextStyle(
-                        fontSize: 20.0,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-*/
